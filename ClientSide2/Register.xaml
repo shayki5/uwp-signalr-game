@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="ClientSide2.Register"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ClientSide2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Width="1305.5">
+
+    <Grid x:Name="userBox1" Margin="516,0,328,72" BorderBrush="#FFAE1010" BorderThickness="2">
+        <Grid.Background>
+            <ImageBrush ImageSource="http://www.geoffreyparker.com/content/images/thumbs/0001160_full-leather-table-top-backgammon.jpeg" Stretch="None"/>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Left" Margin="75,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="108" Width="302" TextAlignment="Center" LineHeight="6" Foreground="White">
+            <Run Text="Welcome To" FontSize="20"/>
+            <LineBreak/>
+            <Run FontWeight="Bold" FontSize="35" Text=" Sela Talk Back"/>
+            <LineBreak/>
+            <Run Text=" Messenger" FontSize="20"/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="169,227,0,0" TextWrapping="Wrap" Text="User Name" VerticalAlignment="Top" Height="46" Width="138" Foreground="#FFF7E9E9" FontSize="20" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="172,358,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Height="46" Width="138" Foreground="White" FontSize="20" FontWeight="Bold"/>
+        <Button Content="Register" FontSize="25" HorizontalAlignment="Left" Margin="144,473,0,0" VerticalAlignment="Top" Height="65" Width="138" Click="ButtonReg_Click" BorderBrush="#BFF9EEEE" Background="#BF186BD3" Foreground="#FFF4EDED"/>
+        <TextBox x:Name="userBox" HorizontalAlignment="Left" Margin="118,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="209" Background="#99FFFFFF"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="118,394,0,0" VerticalAlignment="Top" Height="49" Width="209" Background="#99FFFFFF"/>
+
+        <TextBlock x:Name="validText" Visibility="Collapsed" HorizontalAlignment="Left" Margin="594,378,0,0" TextWrapping="Wrap" Text="Incorrect Username/Password" VerticalAlignment="Top" Height="35" Width="302" Foreground="#FFD92727" FontWeight="Bold" FontSize="18" FontFamily="Segoe WP Black" TextAlignment="Center"/>
+        <Button x:Name="backBtn" Content="Back" Foreground="White" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="54" Width="63" Background="#7FEE0A0A" Click="backBtn_Click"/>
+
+    </Grid>
+</Page>
+
